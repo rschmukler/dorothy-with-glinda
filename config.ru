@@ -1,5 +1,5 @@
 
-require 'toto'
+require 'glinda'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
@@ -12,7 +12,7 @@ end
 #
 # Create and configure a toto instance
 #
-toto = Toto::Server.new do
+witch = Glinda::Server.new do
   #
   # Add your settings here
   # set [:setting], [value]
@@ -30,6 +30,6 @@ toto = Toto::Server.new do
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 
-run toto
+run witch
 
 

@@ -1,6 +1,6 @@
-require 'toto'
+require 'tinman'
 
-@config = Toto::Config::Defaults
+@config = TinMan::Config::Defaults
 
 task :default => :new
 
